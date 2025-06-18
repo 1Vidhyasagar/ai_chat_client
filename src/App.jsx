@@ -4,7 +4,7 @@ import "./App.css"
 
 function App() {
   const [prompt, setPrompt] = useState("");
-  const [chat, setChat] = useState([]); // array of {sender: 'You' | 'AI', text: string}
+  const [chat, setChat] = useState([]); 
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "600px", margin: "0 auto" }}>
+    <div style={{ maxWidth: "600px", margin: "0 auto" }}>
       <h1>Claude Chat App</h1>
       <p>Ask anything to beta AI Assistant </p>
 
@@ -59,7 +59,7 @@ function App() {
 
       <input
         type="text"
-        placeholder="Enter a prompt"
+        placeholder="Ask here"
         value={prompt}
         onChange={(e) => setPrompt(e.target.value)}
         style={{ width: "80%", padding: "8px" }}
