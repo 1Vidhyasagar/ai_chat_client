@@ -1,6 +1,4 @@
 :root {
-  line-height: 1.5;
-  font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -32,13 +30,10 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  color:rgb(217, 217, 3);
+  font-size: 2rem;
+  color:rgb(91, 120, 209);
 }
-p{
-  color: rgb(76, 75, 143);
-}
+
 
 button {
   border-radius: 8px;

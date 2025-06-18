@@ -15,10 +15,12 @@ function App() {
     setPrompt("");
 
     try {
-      const res = await axios.post(
-        "https://ai-chat-server-wcr4.onrender.com/api/ai",
-        { prompt }
-      );
+     
+      // eslint-disable-next-line no-constant-binary-expression
+      const backendUrl = "http://localhost:5000/api/ai" ||
+        "https://ai-chat-server-wcr4.onrender.com/api/ai";
+
+      const res = await axios.post(backendUrl, { prompt });
       setChat((prev) => [...prev, { sender: "AI", text: res.data.result }]);
     } catch (err) {
       console.error(err);
