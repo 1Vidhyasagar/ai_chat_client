@@ -15,7 +15,10 @@ function App() {
     setPrompt("");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/ai", { prompt });
+      const res = await axios.post(
+        "https://ai-chat-server-wcr4.onrender.com/api/ai",
+        { prompt }
+      );
       setChat((prev) => [...prev, { sender: "AI", text: res.data.result }]);
     } catch (err) {
       console.error(err);
