@@ -16,8 +16,7 @@ function App() {
 
     try {
      
-      // eslint-disable-next-line no-constant-binary-expression
-      const backendUrl = "http://localhost:5000/api/ai" ||
+      const backendUrl = 
         "https://ai-chat-server-wcr4.onrender.com/api/ai";
 
       const res = await axios.post(backendUrl, { prompt });
