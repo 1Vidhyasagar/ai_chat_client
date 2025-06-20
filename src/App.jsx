@@ -33,16 +33,16 @@ function App() {
   };
 
   return (
-    <div style={{ maxWidth: "600px", margin: "0 auto" }}>
-      <h1>Claude Chat App</h1>
+    <div style={{ maxWidth: "100vw", padding: "30px",margin: "0 auto" }}>
+      <nav style={{"text-align": "left" }}>Claude</nav>
+      <h1>AI Assistant Chat</h1>
       <p>Ask anything to beta AI Assistant </p>
 
       <div
         style={{
           border: "1px solid #ccc",
-          padding: "10px",
-          minHeight: "300px",
-          minWidth: "",
+          minHeight: "200px",
+          minWidth: "20px",
           marginBottom: "10px",
         }}
       >

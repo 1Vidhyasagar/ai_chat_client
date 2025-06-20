@@ -24,7 +24,6 @@ body {
   box-sizing: border-box;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
   background-color: #242424;
 
 }
@@ -34,6 +33,10 @@ h1 {
   color:rgb(91, 120, 209);
 }
 
+nav{
+  font-size: larger;
+  font-weight: 900;
+}
 
 button {
   border-radius: 8px;
